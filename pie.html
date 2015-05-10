@@ -1,0 +1,17 @@
+
+<html>
+<head>
+    <title>pie</title>
+    <script src="raphael.js"></script>
+    <script src="singlePie.js"></script>
+</head>
+<body style="background-color:#f7f7f7">
+    <div id="holder"></div>
+    <script>
+        percent = 85;
+        paper = Raphael("holder", 700, 700);
+        chart = paper.pieChart(350, 350, 200, percent * 360 / 100, percent + "%", "#00a284");
+        chart.pieAnimation(40, function () { });
+    </script>
+</body>
+</html>
