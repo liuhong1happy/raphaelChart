@@ -1,0 +1,15 @@
+
+<html>
+<head>
+    <title>doughnut</title>
+    <script src="raphael.js"></script>
+    <script src="doughnut.js"></script>
+</head>
+<body style="background-color:#f7f7f7">
+    <div id="holder"></div>
+    <script>
+        paper = Raphael("holder", 700, 700);
+        chart = paper.Doughnut(350, 350, 200, 25, [{ "label": "60分以下", "value": 3 }, { "label": "60-70分", "value": 3 }, { "label": "70-80分", "value": 3 }, { "label": "80-90分", "value": 3 },{ "label": "90-100分", "value": 32 }], 44);
+    </script>
+</body>
+</html>
